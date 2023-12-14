@@ -2,8 +2,9 @@ GOCMD = go
 GOBUILD = $(GOCMD) build
 GOMOD = $(GOCMD) mod
 GOTEST = $(GOCMD) test
-BINARY_NAME = goadmin
+BINARY_NAME = FinderDaohang
 CLI = adm
+UNAME_S := $(shell uname -s)
 
 all: serve
 
@@ -17,10 +18,15 @@ serve:
 	$(GOCMD) run .
 
 build:
-	CGO_ENABLED=1 GOOS=linux GOARCH=amd64 $(GOBUILD) -o ./build/$(BINARY_NAME) -v ./
-
-generate:
-	$(CLI) generate -c adm.ini
+ifeq ($(OS),Windows_NT)
+	CGO_ENABLED=1 GOOS=windows GOARCH=amd64 $(GOBUILD) -o ./$(BINARY_NAME).exe -v ./
+endif
+ifeq ($(UNAME_S),Linux)
+	CGO_ENABLED=1 GOOS=linux GOARCH=amd64 $(GOBUILD) -o  ./$(BINARY_NAME) -v ./
+endif
+ifeq ($(UNAME_S),Darwin)
+	CGO_ENABLED=1 GOOS=darwin GOARCH=amd64 $(GOBUILD) -o ./$(BINARY_NAME) -v ./
+endif
 
 test: black-box-test user-acceptance-test
 
@@ -38,4 +44,4 @@ ready-for-data:
 clean:
 	rm admin_test.db
 
-.PHONY: all serve build generate test black-box-test user-acceptance-test ready-for-data clean
+.PHONY: all serve build test black-box-test user-acceptance-test ready-for-data clean

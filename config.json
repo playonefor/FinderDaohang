@@ -20,17 +20,17 @@
 	"login_url": "/login",
 	"debug": true,
 	"env": "local",
-	"info_log": "/Users/baobao/turi/finder/logs/info.log",
-	"error_log": "/Users/baobao/turi/finder/logs/error.log",
-	"access_log": "/Users/baobao/turi/finder/logs/access.log",
+	"info_log": "/app/FinderDaohang/logs/info.log",
+	"error_log": "/app/FinderDaohang/logs/error.log",
+	"access_log": "/app/FinderDaohang/logs/access.log",
 	"session_life_time": 7200,
 	"file_upload_engine": {
 		"name": "local"
 	},
 	"login_title": "GoAdmin",
 	"auth_user_table": "goadmin_users",
-	"bootstrap_file_path": "/Users/baobao/turi/finder/bootstrap.go",
-	"go_mod_file_path": "/Users/baobao/turi/finder/go.mod",
+	"bootstrap_file_path": "/app/FinderDaohang/bootstrap.go",
+	"go_mod_file_path": "/app/FinderDaohang/go.mod",
 	"asset_root_path": "./public/",
 	"url_format": {
 		"info": "/info/:__prefix",
