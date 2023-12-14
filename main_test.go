@@ -1,7 +1,7 @@
 package main
 
 import (
-	"goadmin/tables"
+	"FinderDaohang/tables"
 	"log"
 	"testing"
 

@@ -20,9 +20,9 @@ import (
 	"github.com/GoAdminGroup/go-admin/template/chartjs"
 	"github.com/gin-gonic/gin"
 
-	"finder/models"
-	"finder/pages"
-	"finder/tables"
+	"FinderDaohang/models"
+	"FinderDaohang/pages"
+	"FinderDaohang/tables"
 )
 
 func main() {
