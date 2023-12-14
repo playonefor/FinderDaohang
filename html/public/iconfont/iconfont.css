@@ -1,0 +1,61 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 3971834 */
+  src: url('iconfont4399.woff2?t=1684914444730') format('woff2'),
+       url('iconfont4399.woff?t=1684914444730') format('woff'),
+       url('iconfont4399.ttf?t=1684914444730') format('truetype'),
+       url('iconfont4399.svg?t=1684914444730#iconfont') format('svg')
+}
+@font-face {
+  font-family: "iconfont"; /* Project id 3971834 */
+  src: url('iconfont2ea2e.ttf?t=1700641350290') format('truetype');
+}
+
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-add:before {
+  content: "\e835";
+}
+
+.icon-edit:before {
+  content: "\e83b";
+}
+
+.icon-delete:before {
+  content: "\e83c";
+}
+
+.icon-customer-interests:before {
+  content: "\e829";
+}
+
+.icon-info:before {
+  content: "\e83d";
+}
+
+.icon-favorites:before {
+  content: "\e839";
+}
+
+.icon-close:before {
+  content: "\e83a";
+}
+
+.icon-settings:before {
+  content: "\e840";
+}
+
+.icon-save:before {
+  content: "\e866";
+}
+.icon-paixu:before {
+  content: "\e609";
+}
+
+ 
